@@ -1,0 +1,12 @@
+D:\browserdownloads\FIleUploader-From-Desktop-master\FIleUploader-From-Desktop-master\Desktop File Uploader\bin\Release\Desktop File Uploader.exe.config
+D:\browserdownloads\FIleUploader-From-Desktop-master\FIleUploader-From-Desktop-master\Desktop File Uploader\bin\Release\Desktop File Uploader.exe
+D:\browserdownloads\FIleUploader-From-Desktop-master\FIleUploader-From-Desktop-master\Desktop File Uploader\bin\Release\Desktop File Uploader.pdb
+D:\browserdownloads\FIleUploader-From-Desktop-master\FIleUploader-From-Desktop-master\Desktop File Uploader\bin\Release\Desktop File Uploader.xml
+D:\browserdownloads\FIleUploader-From-Desktop-master\FIleUploader-From-Desktop-master\Desktop File Uploader\obj\Release\Desktop File Uploader.vbprojAssemblyReference.cache
+D:\browserdownloads\FIleUploader-From-Desktop-master\FIleUploader-From-Desktop-master\Desktop File Uploader\obj\Release\Desktop_File_Uploader.Form1.resources
+D:\browserdownloads\FIleUploader-From-Desktop-master\FIleUploader-From-Desktop-master\Desktop File Uploader\obj\Release\Desktop_File_Uploader.Resources.resources
+D:\browserdownloads\FIleUploader-From-Desktop-master\FIleUploader-From-Desktop-master\Desktop File Uploader\obj\Release\Desktop File Uploader.vbproj.GenerateResource.cache
+D:\browserdownloads\FIleUploader-From-Desktop-master\FIleUploader-From-Desktop-master\Desktop File Uploader\obj\Release\Desktop File Uploader.vbproj.CoreCompileInputs.cache
+D:\browserdownloads\FIleUploader-From-Desktop-master\FIleUploader-From-Desktop-master\Desktop File Uploader\obj\Release\Desktop File Uploader.exe
+D:\browserdownloads\FIleUploader-From-Desktop-master\FIleUploader-From-Desktop-master\Desktop File Uploader\obj\Release\Desktop File Uploader.xml
+D:\browserdownloads\FIleUploader-From-Desktop-master\FIleUploader-From-Desktop-master\Desktop File Uploader\obj\Release\Desktop File Uploader.pdb
