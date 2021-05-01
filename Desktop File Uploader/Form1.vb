@@ -29,7 +29,7 @@ Public Class Form1
             Using WC As New WebClient
                 WC.Encoding = Encoding.UTF8
                 AddHandler WC.DownloadStringCompleted, AddressOf COMPLETE
-                WC.DownloadStringTaskAsync(New Uri("https://anonfiles.com/"))
+                WC.DownloadStringTaskAsync(New Uri("https://anonfiles.com"))
                 Items.Add(WC, NewItem)
                 Files.Add(Fichier)
             End Using
@@ -47,11 +47,11 @@ Public Class Form1
             Items(sender).SubItems(1).Text = "Error..."
             Items(sender).SubItems(1).ForeColor = Color.Red
         ElseIf e.Result IsNot Nothing Then
-            Dim URL As String = "https://anonfiles.com/api/upload"
+            Dim URL As String = "https://api.anonfiles.com/upload"
             Dim token As String = Regex.Match(e.Result, " {'token': '(.*?)'}").Groups(1).Value
             Using WC As New WebClient
 
-                WC.Headers.Add("api", "https://anonfiles.com")
+                WC.Headers.Add("api", "https://api.anonfiles.com/upload")
                 WC.Headers.Add("token", token)
                 WC.Headers.Add("requested-with", "XMLHttpRequest")
 
@@ -167,32 +167,10 @@ Public Class Form1
 
 #End Region
 
-    Private Sub FileToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles FileToolStripMenuItem.Click
-        Dim I As New OpenFileDialog
-        I.Title = "Browse Files"
-        I.Filter = "All Files (*.*)|*.*"
-        If I.ShowDialog = Windows.Forms.DialogResult.OK Then
-            GetURI(I.FileName)
-        End If
-    End Sub
 
-    Private Sub FolderToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles FolderToolStripMenuItem.Click
-        Dim I As New FolderBrowserDialog
-        I.Description = "Browse Folders"
-        I.ShowNewFolderButton = True
-        If I.ShowDialog = Windows.Forms.DialogResult.OK Then
-            For Each O In Directory.GetFiles(I.SelectedPath, "*.*", SearchOption.AllDirectories)
-                GetURI(O)
-            Next
-        End If
-    End Sub
 
     Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
         End
-    End Sub
-
-    Private Sub LinkLabel1_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LinkLabel1.LinkClicked
-        MsgBox("coded by: mxl0s" & vbCrLf & "ne znam sta staviti", MsgBoxStyle.Information, "bude u updateu")
     End Sub
 
     Private Sub lb1_Click(sender As Object, e As EventArgs) Handles lb1.Click

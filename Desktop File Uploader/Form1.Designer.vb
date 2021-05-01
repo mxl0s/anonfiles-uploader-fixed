@@ -39,7 +39,6 @@ Partial Class Form1
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.P1 = New System.Windows.Forms.PictureBox()
         Me.lb1 = New System.Windows.Forms.Label()
-        Me.LinkLabel1 = New System.Windows.Forms.LinkLabel()
         Me.CM1.SuspendLayout()
         Me.Panel1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -168,6 +167,7 @@ Partial Class Form1
         '
         'lb1
         '
+        Me.lb1.BackColor = System.Drawing.Color.Black
         Me.lb1.ForeColor = System.Drawing.Color.White
         Me.lb1.Location = New System.Drawing.Point(4, -13)
         Me.lb1.Name = "lb1"
@@ -176,17 +176,6 @@ Partial Class Form1
         Me.lb1.Text = "AnonFile API Uploader BETA"
         Me.lb1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'LinkLabel1
-        '
-        Me.LinkLabel1.AutoSize = True
-        Me.LinkLabel1.LinkColor = System.Drawing.Color.Blue
-        Me.LinkLabel1.Location = New System.Drawing.Point(4, 472)
-        Me.LinkLabel1.Name = "LinkLabel1"
-        Me.LinkLabel1.Size = New System.Drawing.Size(56, 15)
-        Me.LinkLabel1.TabIndex = 4
-        Me.LinkLabel1.TabStop = True
-        Me.LinkLabel1.Text = "klikni me"
-        '
         'Form1
         '
         Me.AllowDrop = True
@@ -194,7 +183,6 @@ Partial Class Form1
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(17, Byte), Integer), CType(CType(17, Byte), Integer), CType(CType(17, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(379, 496)
-        Me.Controls.Add(Me.LinkLabel1)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.Lv1)
         Me.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -205,13 +193,12 @@ Partial Class Form1
         Me.MinimizeBox = False
         Me.Name = "Form1"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "AnonFile Uploader Desktop | X-SLAYER"
+        Me.Text = "Anonfile uploader by mxl0s"
         Me.CM1.ResumeLayout(False)
         Me.Panel1.ResumeLayout(False)
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.P1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
-        Me.PerformLayout()
 
     End Sub
     Friend WithEvents Lv1 As System.Windows.Forms.ListView
@@ -229,6 +216,5 @@ Partial Class Form1
     Friend WithEvents FolderToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents FileToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
-    Friend WithEvents LinkLabel1 As System.Windows.Forms.LinkLabel
 
 End Class
